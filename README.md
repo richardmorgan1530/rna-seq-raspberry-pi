@@ -40,6 +40,31 @@ environments where low-cost and reproducible bioinformatics workflows are
 valuable.
 
 ------------------------------------------------------------------------
+## Quick Start
+
+For a complete step-by-step setup guide, see:
+```
+docs/getting-started.md
+```
+This guide walks through:
+- system installation  
+- storage configuration  
+- RNA-seq pipeline execution  
+- optional web interface setup
+
+New users should start here: docs/getting-started.md
+
+------------------------------------------------------------------------
+
+## Documentation
+
+- Getting Started: docs/getting-started.md  
+- Installation: docs/installation.md  
+- Storage setup: docs/storage-setup.md  
+- Pipeline: docs/pipeline.md  
+- Apache & Jupyter: docs/apache-jupyter.md
+
+------------------------------------------------------------------------
 
 # Key Features
 
