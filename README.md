@@ -288,7 +288,7 @@ Users should ensure appropriate validation before research use.
 ------------------------------------------------------------------------
 
 # Project Structure
-
+```
 rna-seq-raspberry-pi
 │
 ├── README.md
@@ -309,7 +309,7 @@ rna-seq-raspberry-pi
 │ └── README.md
 │
 └── data
-
+```
 ------------------------------------------------------------------------
 
 # Contributing
