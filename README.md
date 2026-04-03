@@ -66,10 +66,10 @@ The platform consists of four main components:
 4.  Web-based access interface
 
 Typical architecture:
-
+```
 NCBI SRA → Raspberry Pi → USB SSD → Bioinformatics Tools → Results  
 → Apache2 / JupyterLab → Browser Access
-
+```
 ------------------------------------------------------------------------
 
 # Original Work and Attribution
@@ -92,7 +92,7 @@ Raspberry Pi hardware.
 ------------------------------------------------------------------------
 
 # Key Differences from Original Workflow
-
+```
   Feature        CyVerse Lesson (Original)   This Project
   -------------- --------------------------- ---------------------------
   Compute        Cloud (CyVerse JupyterLab)  Local Raspberry Pi
@@ -100,7 +100,7 @@ Raspberry Pi hardware.
   Execution      Remote                      Fully local
   Setup          Pre-configured              Manual installation
   Scalability    HPC infrastructure          Low-power device
-
+```
 ------------------------------------------------------------------------
 
 # Example Applications
@@ -119,7 +119,7 @@ Possible use cases include:
 # Hardware Requirements
 
 Minimum tested configuration:
-
+```
   Component               Example
   ----------------------- ---------------------------------------
   Single-board computer   Raspberry Pi 4 or Raspberry Pi 5
@@ -127,7 +127,7 @@ Minimum tested configuration:
   System disk             microSD card (32–128 GB)
   Network                 Ethernet or WiFi
   Power                   5V / 3A power supply
-
+```
 Optional hardware:
 
 -   powered USB hub (for stability)
@@ -135,9 +135,9 @@ Optional hardware:
 -   UPS (for long-running jobs)
 
 Detailed setup instructions:
-
+```
 docs/storage-setup.md
-
+```
 ------------------------------------------------------------------------
 
 # Software Requirements
@@ -154,9 +154,9 @@ Required software components:
 -   Optional JupyterLab
 
 Installation instructions:
-
+```
 docs/installation.md
-
+```
 ------------------------------------------------------------------------
 
 # Quick Start
@@ -267,9 +267,9 @@ The repository includes:
 -   modular workflow components
 
 Full documentation:
-
+```
 docs/
-
+```
 ------------------------------------------------------------------------
 
 # Limitations
@@ -326,9 +326,9 @@ Potential areas for development include:
 -   downstream analysis integration (DESeq2, edgeR)
 
 Please see:
-
+```
 CONTRIBUTING.md
-
+```
 ------------------------------------------------------------------------
 
 # Citation
@@ -336,10 +336,10 @@ CONTRIBUTING.md
 If you use this project in research or teaching, please cite it.
 
 Example citation:
-
+```
 Morgan R. RNA-seq Analysis on Raspberry Pi: an edge-based
 bioinformatics workflow. GitHub repository.
-
+```
 ------------------------------------------------------------------------
 
 # License
@@ -347,15 +347,16 @@ bioinformatics workflow. GitHub repository.
 This project is released under the MIT License.
 
 See:
-
+```
 LICENSE
-
+```
 ------------------------------------------------------------------------
 
 # Contact
 
 Project maintainer:
-
+```
 Richard Morgan  
 MSc Regenerative Medicine  
 University of Galway
+```
