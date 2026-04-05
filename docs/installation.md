@@ -79,15 +79,16 @@ Example from PuTTY Terminal using the hostname you previously set:
 
 <p align="left">
   <img src="../images/PuTTY-login-username.png" width="421"><br>
+  Input the username e.g. 'pi'
 </p>
-Input the username for example 'pi' and press the return button on your keyboard
 
 <p align="left">
   <img src="../images/PuTTY-login-password.png" width="421"><br>
+  Input password
 </p>
-Input the password which you previously set and press the return button on your keyboard
 
 <p align="left">
   <img src="../images/PuTTY-login-success.png" width="421"><br>
+  Login success!
 </p>
-Login success!
+
