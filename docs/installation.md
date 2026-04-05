@@ -68,6 +68,6 @@ connect via SSH using terminal apps such as PuTTY, Windows Terminal etc...
 Example from PuTTY Terminal using the hostname you previously set:
 
 <p align="center">
-  <img src="images/PuTTY login.png" width="602"><br>
+  <img src="images/PuTTY_login.png" width="602"><br>
   <em>Figure: PuTTY Configuration - Login to raspberrypi.local port 22.</em>
 </p>
