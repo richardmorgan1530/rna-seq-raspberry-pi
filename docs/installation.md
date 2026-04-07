@@ -65,6 +65,8 @@ Login to the Raspberry Pi.
 In future you can remove the monitor, keyboard and mouse and instead
 connect via SSH using terminal apps such as PuTTY, Windows Terminal etc...
 
+PuTTY: https://putty.org/index.html
+
 Example from PuTTY Terminal using the hostname you previously set:
 
 <p align="left">
