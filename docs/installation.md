@@ -231,6 +231,11 @@ Install via package manager:
 ```
 sudo apt install sra-toolkit -y
 ```
+<p align="left">
+  <img src="../images/FileZilla-login(2).png" width="800">
+  Click Enter
+</p>
+
 Verify installation:
 ```
 prefetch --version
