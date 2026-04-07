@@ -190,13 +190,13 @@ Click on: Quickconnect
   <img src="../images/FileZilla-login(2).png" width="800">
 </p>
 
-This shows the Raspberry Pi root directory in the right hand side pane i.e. "Remote site"
+FileZilla above shows the Raspberry Pi root directory in the right hand side pane i.e. "Remote site"
 
-To view the /var/www/html folder, click on the folder next to / at the top of the folder tree
+To view the /var/www/html folder, click on the folder icon next to / at the top of the folder tree
 
-Scroll down to the bottom of the tree to the base folder 'var' and double click to open it
+Scroll down to the bottom of the tree, to the base folder named 'var' and double click to open it
 
-Then www, then html and you should see the index.html file
+Then www, then html and you should see the index.html file i.e. 'Apache2 Debian Default Page'
 
 ------------------------------------------------------------------------
 
