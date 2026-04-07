@@ -167,9 +167,21 @@ Example file:
 ```
 'Apache2 Debian Default Page' is the file at /var/www/html/index.html
 
-You can replace this default index.html page with your own .html page
+When you open http://raspberrypi.local in a browser, you are opening the file /var/www/html/index.html
 
-Currently this index.html page is only visible to the local area network, not the public network.
+This index.html page is visible to all PCs connected to the local area network via a web browser, by going to the address http://raspberrypi.local
+
+------------------------------------------------------------------------
+
+# View Web Root Directory in FileZilla
+
+Open FileZilla Software
+
+Connect to the Raspberry Pi:
+
+<p align="left">
+  <img src="../images/FileZilla-login.png" width="421">
+</p>
 
 ------------------------------------------------------------------------
 
