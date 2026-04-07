@@ -256,29 +256,10 @@ kallisto version
 
 # Install JupyterLab
 
-Create a virtual environment in your home directory:
+Create the notebook directory, use the USB SSD as the working directory:
 ```
-python3 -m venv ~/jlab-venv
-```
-Activate it:
-```
-source ~/jlab-venv/bin/activate
-```
-Install using pip:
-```
-pip3 install jupyterlab
-```
-Verify:
-```
-jupyter lab --version
-```
-------------------------------------------------------------------------
-
-JupyterLab Working Directory
-
-Use the USB SSD as the working directory:
-```
-/var/www/html/usb
+sudo mkdir -p /var/www/html/usb/jupyter
+sudo chown -R pi:pi /var/www/html/usb/jupyter
 ```
 This ensures:
 
@@ -286,4 +267,49 @@ This ensures:
 - improved I/O performance
 - reduced SD card wear
   
+Create a dedicated venv (virtual environment) for JupyterLab (PEP 668 safe):
+```
+python3 -m venv /home/pi/jlab-venv
+```
+Upgrade pip + install JupyterLab:
+```
+/home/pi/jlab-venv/bin/pip install --upgrade pip
+/home/pi/jlab-venv/bin/pip install jupyterlab ipykernel
+```
+(You will never need to manually “activate” this venv in daily use.)
+
+------------------------------------------------------------------------
+
+# Configure Apache reverse proxy for /usb/jupyter/
+
+Enable Apache modules:
+```
+sudo a2enmod proxy proxy_http proxy_wstunnel rewrite headers
+sudo systemctl restart apache2
+```
+Edit the Apache default site:
+```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+Inside <VirtualHost *:80> add (place near the top of the vhost):
+```
+ProxyRequests Off
+ProxyPreserveHost Off
+
+RewriteEngine On
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteRule /usb/jupyter/(.*)  ws://127.0.0.1:8888/usb/jupyter/$1  [P,L]
+
+ProxyPass        /usb/jupyter/ http://127.0.0.1:8888/usb/jupyter/
+ProxyPassReverse /usb/jupyter/ http://127.0.0.1:8888/usb/jupyter/
+
+<Directory /var/www/html/usb/jupyter>
+    Options -Indexes
+    Require all granted
+</Directory>
+```
+Reload Apache:
+```
+sudo systemctl reload apache2
+```
 ------------------------------------------------------------------------
