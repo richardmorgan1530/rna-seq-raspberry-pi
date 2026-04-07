@@ -94,3 +94,63 @@ Example from PuTTY Terminal using the hostname you previously set:
   Login success!
 </p>
 
+------------------------------------------------------------------------
+
+# Update the System
+
+Once connected via SSH, update the OS:
+```
+sudo apt update
+sudo apt upgrade -y
+```
+
+# Install Apache2 Web Server
+
+Install Apache2:
+```
+sudo apt install apache2 -y
+```
+Verify the service is running:
+```
+sudo systemctl status apache2
+```
+Among the text you should see something similar to:
+```
+Active: active (running)
+```
+------------------------------------------------------------------------
+
+# Test the Web Server
+
+If you set your hostname to raspberrypi previously, then open a browser
+on your local network and navigate to:
+```
+http://raspberrypi.local
+```
+Otherwise replace raspberrypi above with the hostname you chose.
+
+Or alternatively if you know the IP address of your Raspberry Pi, for example:
+```
+http://192.168.1.50
+```
+You should see the default Apache page:
+```
+Apache2 Debian Default Page
+```
+
+------------------------------------------------------------------------
+
+# Web Root Directory
+
+The default web root is:
+```
+/var/www/html
+```
+
+Example file:
+```
+/var/www/html/index.html
+```
+
+For this project, the external USB SSD will later be mounted within the web-accessible directory structure.
+
