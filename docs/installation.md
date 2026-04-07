@@ -232,8 +232,9 @@ Install via package manager:
 sudo apt install sra-toolkit -y
 ```
 <p align="left">
-  <img src="../images/FileZilla-login(2).png" width="800">
-  Click Enter
+  <img src="../images/sra-toolkit-install.png" width="800">
+  <br>
+  Click Enter to complete the install
 </p>
 
 Verify installation:
