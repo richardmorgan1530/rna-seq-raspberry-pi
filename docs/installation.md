@@ -187,7 +187,7 @@ Port: 22
 Click on: Quickconnect
 
 <p align="left">
-  <img src="../images/FileZilla-login.png" width="800">
+  <img src="../images/FileZilla-login(1).png" width="800">
 </p>
 
 ------------------------------------------------------------------------
