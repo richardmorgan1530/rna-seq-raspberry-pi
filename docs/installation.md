@@ -187,8 +187,16 @@ Port: 22
 Click on: Quickconnect
 
 <p align="left">
-  <img src="../images/FileZilla-login(1).png" width="800">
+  <img src="../images/FileZilla-login(2).png" width="800">
 </p>
+
+This shows the Raspberry Pi root directory in the right hand side pane i.e. "Remote site"
+
+To view the /var/www/html folder, click on the folder next to / at the top of the folder tree
+
+Scroll down to the bottom of the tree to the base folder 'var' and double click to open it
+
+Then www, then html and you should see the index.html file
 
 ------------------------------------------------------------------------
 
