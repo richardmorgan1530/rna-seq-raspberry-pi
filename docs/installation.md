@@ -256,6 +256,14 @@ kallisto version
 
 # Install JupyterLab
 
+Create a virtual environment in your home directory:
+```
+python3 -m venv ~/jlab-venv
+```
+Activate it:
+```
+source ~/jlab-venv/bin/activate
+```
 Install using pip:
 ```
 pip3 install jupyterlab
