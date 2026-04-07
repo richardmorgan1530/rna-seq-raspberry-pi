@@ -202,10 +202,8 @@ Then www, then html and you should see the index.html file i.e. 'Apache2 Debian 
 
 # Create a web-accessible directory to mount the USB SSD
 
-Folder structure:
-```
-/var/www/html/usb
-```
+Folder structure is /var/www/html/usb
+
 Create the directory:
 ```
 sudo mkdir -p /var/www/html/usb
@@ -215,4 +213,63 @@ Set permissions:
 sudo chown -R pi:www-data /var/www/html
 sudo chmod -R 775 /var/www/html
 ```
+Click the refresh button in FileZilla to view this new usb folder
+
+------------------------------------------------------------------------
+
+# Install Core Software
+
+Install required packages:
+```
+sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget unzip -y
+```
+------------------------------------------------------------------------
+
+# Install SRA Toolkit (APT)
+
+Install via package manager:
+```
+sudo apt install sra-toolkit -y
+```
+Verify installation:
+```
+prefetch --version
+fasterq-dump --version
+```
+------------------------------------------------------------------------
+
+# Install Kallisto (APT)
+```
+sudo apt install kallisto -y
+```
+Verify: 
+```
+kallisto version
+```
+------------------------------------------------------------------------
+
+# Install JupyterLab
+
+Install using pip:
+```
+pip3 install jupyterlab
+```
+Verify:
+```
+jupyter lab --version
+```
+------------------------------------------------------------------------
+
+JupyterLab Working Directory
+
+Use the USB SSD as the working directory:
+```
+/var/www/html/usb
+```
+This ensures:
+
+- large FASTQ files are not stored on the SD card
+- improved I/O performance
+- reduced SD card wear
+  
 ------------------------------------------------------------------------
