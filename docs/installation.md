@@ -137,6 +137,20 @@ You should see the default Apache page:
 ```
 Apache2 Debian Default Page
 ```
+<p align="left">
+  <img src="../images/Apache2-default.png" width="421">
+  <br>
+  Web Server success!
+</p>
+------------------------------------------------------------------------
+
+# Install FileZilla
+
+Install FileZilla on your Laptop/PC for easy file transfer to your Raspberry Pi
+
+Download the latest version of **FileZilla** from:
+
+https://filezilla-project.org/
 
 ------------------------------------------------------------------------
 
@@ -151,6 +165,27 @@ Example file:
 ```
 /var/www/html/index.html
 ```
+'Apache2 Debian Default Page' is the file at /var/www/html/index.html
 
-For this project, the external USB SSD will later be mounted within the web-accessible directory structure.
+You can replace this default index.html page with your own .html page
 
+Currently this index.html page is only visible to the local area network, not the public network.
+
+------------------------------------------------------------------------
+
+# Create a web-accessible directory to mount the USB SSD
+
+Folder structure:
+```
+/var/www/html/usb
+```
+Create the directory:
+```
+sudo mkdir -p /var/www/html/usb
+```
+Set permissions:
+```
+sudo chown -R pi:www-data /var/www/html
+sudo chmod -R 775 /var/www/html
+```
+------------------------------------------------------------------------
