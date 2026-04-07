@@ -178,9 +178,16 @@ This index.html page is visible to all PCs connected to the local area network v
 Open FileZilla Software
 
 Connect to the Raspberry Pi:
+```
+Host: raspberrypi.local
+Username: pi
+Password: your passowrd
+Port: 22
+```
+Click on: Quickconnect
 
 <p align="left">
-  <img src="../images/FileZilla-login.png" width="421">
+  <img src="../images/FileZilla-login.png" width="800">
 </p>
 
 ------------------------------------------------------------------------
