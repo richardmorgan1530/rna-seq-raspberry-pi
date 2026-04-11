@@ -231,7 +231,7 @@ Insert the USB SSD into the Raspberry Pi USB port and identify the USB SSD ID:
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
 <p align="left">
-  <img src="../images/.png" width="800">
+  <img src="../images/mount-USB-SSD-ID.png" width="800">
 </p>
 
 ------------------------------------------------------------------------
