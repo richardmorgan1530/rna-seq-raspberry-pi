@@ -234,6 +234,7 @@ lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
   <img src="../images/mount-USB-SSD-ID.png" width="800">
 </p>
 
+You can see the USB SSD UUID in the example from the screenshot above, next to sda1
 ------------------------------------------------------------------------
 
 # Install Core Software
