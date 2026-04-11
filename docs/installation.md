@@ -234,8 +234,19 @@ lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
   <img src="../images/mount-USB-SSD-ID.png" width="800">
 </p>
 
-You can see the USB SSD UUID in the example from the screenshot above, next to sda1
+In the example shown in the screenshot above you can see the UUID next to sda1
 
+If you SSD is formatted as anything other than ext4 then partition and format as follows:
+
+```
+sudo parted -s /dev/sda mklabel gpt
+sudo parted -s /dev/sda mkpart primary ext4 0% 100%
+sudo mkfs.ext4 -F -L NCBI /dev/sda1
+```
+Check to ensure its correctly formatted to ext4:
+```
+lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
+```
 ------------------------------------------------------------------------
 
 # Install Core Software
@@ -246,6 +257,19 @@ sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget un
 ```
 You can see the USB SSD UUID next to sda1 in the example screenshot above.
 
+Update the fstab file so that the SSD automatically mounts when Raspberry Pi boots:
+```
+sudo nano /etc/fstab
+```
+Add the following line:
+```
+UUID=626d0262-7b39-4f72-b1fa-8ff172a5639b  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
+```
+To exit press:
+```
+ctrl + x
+```
+Type y and Enter to save
 
 ------------------------------------------------------------------------
 
