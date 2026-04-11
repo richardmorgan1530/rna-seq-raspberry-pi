@@ -247,6 +247,21 @@ Check to ensure its correctly formatted to ext4:
 ```
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
+Take note of the UUID and put the following line of code into the fstab file as follows
+
+Update your Raspberry Pi fstab file so that the SSD automatically mounts when Raspberry Pi boots:
+```
+sudo nano /etc/fstab
+```
+Add the following line of code:
+```
+UUID=YOUR_UUID_HERE  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
+```
+see example below:
+```
+UUID=626d0262-7b39-4f72-b1fa-8ff172a5639b  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
+```
+
 ------------------------------------------------------------------------
 
 # Install Core Software
