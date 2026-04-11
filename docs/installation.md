@@ -261,6 +261,10 @@ see example below:
 ```
 UUID=626d0262-7b39-4f72-b1fa-8ff172a5639b  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
 ```
+<p align="left">
+  <img src="../images/mount-USB-SSD-fstab.png" width="800">
+</p>
+
 To exit press:
 ```
 ctrl + x
