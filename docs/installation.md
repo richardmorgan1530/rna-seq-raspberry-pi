@@ -261,6 +261,11 @@ see example below:
 ```
 UUID=626d0262-7b39-4f72-b1fa-8ff172a5639b  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
 ```
+To exit press:
+```
+ctrl + x
+```
+Type y and Enter to save
 
 ------------------------------------------------------------------------
 
@@ -271,20 +276,6 @@ Install required packages:
 sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget unzip -y
 ```
 You can see the USB SSD UUID next to sda1 in the example screenshot above.
-
-Update the fstab file so that the SSD automatically mounts when Raspberry Pi boots:
-```
-sudo nano /etc/fstab
-```
-Add the following line:
-```
-UUID=626d0262-7b39-4f72-b1fa-8ff172a5639b  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
-```
-To exit press:
-```
-ctrl + x
-```
-Type y and Enter to save
 
 ------------------------------------------------------------------------
 
