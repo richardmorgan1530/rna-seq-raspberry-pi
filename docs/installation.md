@@ -217,6 +217,25 @@ Click the refresh button in FileZilla to view this new usb folder
 
 ------------------------------------------------------------------------
 
+# Mount USB SSD for Jupyter Lab and NCBI File Downloads:
+
+This example uses a 1TB USB SSD (important) connected to the Raspberry Pi via externally powered USB hub.
+
+For Raspberry Pi requirements, its best to format the USB SSD using ext4 formatting.
+
+Raspberry Pi headless operating system is very minimal and therefore doesnt automatically mount any attached USB hard drives, you need to configure it as follows.
+
+Insert the USB SSD into the Raspberry Pi USB port and identify the USB SSD ID:
+
+```
+lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
+```
+<p align="left">
+  <img src="../images/.png" width="800">
+</p>
+
+------------------------------------------------------------------------
+
 # Install Core Software
 
 Install required packages:
