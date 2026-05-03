@@ -255,7 +255,9 @@ Check to ensure its correctly formatted to ext4:
 ```
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
-Take note of the UUID and put the following line of code into the fstab file as follows
+Take note of the UUID of your USB SSD as its needed later.
+
+Once correctly formatted to ext4, auto mount the USB SSD to the website folder located at /var/www/html/usb
 
 Update your Raspberry Pi fstab file so that the SSD automatically mounts when Raspberry Pi boots:
 ```
@@ -263,7 +265,7 @@ sudo nano /etc/fstab
 ```
 Next mount the USB SSD to the location /var/www/html/usb
 
-Add the following line of code:
+Add the following line of code to the file:
 ```
 UUID=YOUR_UUID_HERE  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
 ```
