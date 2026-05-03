@@ -473,7 +473,7 @@ e.g. Cloudflare/domain, then keep authentication enabled or protect it with Clou
 Later in these instructions, Jupyter Lab will be configured for access over a public network using Cloudflare 
 public domain address and protected with Cloudflare Access, not Jupyter password
 
-Here for local network only, for hassle free use, remove the requirement to use a password to login to Jupyter
+Remove the requirement to use a password to login to Jupyter
 
 Edit the Jupyter service:
 ```
