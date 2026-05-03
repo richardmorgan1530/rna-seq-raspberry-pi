@@ -333,7 +333,7 @@ Create the notebook directory, use the USB SSD as the working directory:
 sudo mkdir -p /var/www/html/usb/jupyter
 sudo chown -R pi:pi /var/www/html/usb/jupyter
 ```
-This ensures:
+Saving to the USB SSD ensures:
 
 - large FASTQ files are not stored on the SD card
 - improved I/O performance
