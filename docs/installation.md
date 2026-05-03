@@ -285,6 +285,8 @@ Type 'y' followed by 'Enter key' to save
 
 If you reboot the Raspberry Pi at this point on, the USB SSD will auto mount to the folder located at /var/www/html/usb
 
+Anything saved to the folder located at /var/www/html/usb will be saved directly to the USB SSD only
+
 ------------------------------------------------------------------------
 
 # Install Core Software
