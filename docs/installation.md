@@ -295,8 +295,6 @@ Install required packages:
 ```
 sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget unzip -y
 ```
-You can see the USB SSD UUID next to sda1 in the example screenshot above.
-
 ------------------------------------------------------------------------
 
 # Install SRA Toolkit (APT)
