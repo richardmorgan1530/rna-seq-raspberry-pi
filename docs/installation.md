@@ -456,7 +456,44 @@ Test in a browser:
 ```
 http://raspberrypi.local/usb/jupyter
 ```
+You will be directed to the webpage shown below:
 
 <p align="left">
   <img src="../images/Jupyter(1).png" width="800">
 </p>
+------------------------------------------------------------------------
+Remove the requirement to use a password to login to Jupyter
+
+For local-network only / not recommended for internet-facing use. If later accessing via a public domain
+e.g. Cloudflare/domain, then keep authentication enabled or protect it with Cloudflare Access.
+
+Later in these instructions, Jupyter Lab will be configured for access over a public network using Cloudflare 
+public domain address and protected with Cloudflare Access, not Jupyter password
+
+Here for local network only, for hassle free use, remove the requirement to use a password to login to Jupyter
+
+Edit the Jupyter service:
+```
+sudo nano /etc/systemd/system/jupyter.service
+```
+Replace the ExecStart= line with this single line:
+```
+ExecStart=/home/pi/jlab-venv/bin/jupyter lab --no-browser --ip=127.0.0.1 --port=8888 --ServerApp.port_retries=0 --ServerApp.base_url=/usb/jupyter --ServerApp.root_dir=/var/www/html/usb/jupyter --ServerApp.token='' --ServerApp.password=''
+```
+Save:
+```
+Ctrl + X
+Y
+Enter
+```
+Then reload and restart:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart jupyter
+sudo systemctl status jupyter
+```
+Now open:
+```
+http://raspberrypi.local/usb/jupyter/
+```
+It should go straight into JupyterLab.
