@@ -348,7 +348,7 @@ Upgrade pip + install JupyterLab:
 /home/pi/jlab-venv/bin/pip install --upgrade pip
 /home/pi/jlab-venv/bin/pip install jupyterlab ipykernel
 ```
-(You will never need to manually “activate” this venv in daily use.)
+(You will never need to manually “activate” this venv in daily use, it will automatically activate.)
 
 ------------------------------------------------------------------------
 
