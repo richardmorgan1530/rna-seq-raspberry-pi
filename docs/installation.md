@@ -244,7 +244,7 @@ lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 
 In the example shown in the screenshot above you can see the UUID next to sda1
 
-If you SSD is formatted as anything other than ext4 then partition and format as follows:
+If your SSD is formatted as anything other than ext4 then partition and format as follows:
 
 ```
 sudo parted -s /dev/sda mklabel gpt
@@ -261,6 +261,8 @@ Update your Raspberry Pi fstab file so that the SSD automatically mounts when Ra
 ```
 sudo nano /etc/fstab
 ```
+Next mount the USB SSD to the location /var/www/html/usb
+
 Add the following line of code:
 ```
 UUID=YOUR_UUID_HERE  /var/www/html/usb  ext4  noatime,nofail,x-systemd.automount,x-systemd.device-timeout=10  0  2
