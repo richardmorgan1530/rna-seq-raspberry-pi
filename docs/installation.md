@@ -230,7 +230,8 @@ This example uses a 1TB USB SSD (important) connected to the Raspberry Pi via ex
 
 For Raspberry Pi requirements, its best to format the USB SSD using ext4 formatting.
 
-Raspberry Pi headless operating system is very minimal and therefore doesnt automatically mount any attached USB hard drives, you need to configure it as follows.
+Raspberry Pi headless operating system is very minimal and therefore doesnt automatically mount any attached 
+USB hard drives right out of the box, so you need to configure auto mount as follows:
 
 Insert the USB SSD into the Raspberry Pi USB port and identify the USB SSD ID:
 
