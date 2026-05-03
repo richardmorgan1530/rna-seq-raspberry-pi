@@ -34,7 +34,7 @@ Download the latest version of **Raspberry Pi Imager** from:
 
 https://www.raspberrypi.com/software/
 
-Use v2.0.7 or higher only.
+Use Raspberry Pi Imager v2.0.7 or higher only, as lower versions have issues.
 
 Insert your microSD card and select:
 
