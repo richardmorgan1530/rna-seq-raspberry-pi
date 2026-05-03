@@ -281,7 +281,7 @@ To exit press:
 ```
 ctrl + x
 ```
-Type y and Enter to save
+Type 'y' followed by 'Enter key' to save
 
 ------------------------------------------------------------------------
 
