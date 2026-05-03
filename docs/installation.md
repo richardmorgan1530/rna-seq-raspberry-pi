@@ -462,6 +462,7 @@ You will be directed to the webpage shown below:
   <img src="../images/Jupyter(1).png" width="800">
 </p>
 ------------------------------------------------------------------------
+
 Remove the requirement to use a password to login to Jupyter
 
 For local-network only / not recommended for internet-facing use. If later accessing via a public domain
