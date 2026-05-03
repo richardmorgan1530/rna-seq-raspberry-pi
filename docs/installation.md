@@ -59,18 +59,20 @@ Write the SD card and, when complete, insert it into the Raspberry Pi.
 
 ⚠️ Initial Setup Requirement
 
-Although Raspberry Pi Imager allows preconfiguration of username, password, and Wi-Fi settings, these settings may not reliably apply after flashing.
+Although Raspberry Pi Imager allows preconfiguration of username, password and Wi-Fi settings, these settings may not reliably apply after flashing.
 
 For consistency and reproducibility, this project uses a manual first-boot setup.
 
 Requirement:
+
 A keyboard and monitor must be connected to the Raspberry Pi 5 during initial boot.
+
 On First Boot:
-Power on the Raspberry Pi
-Complete the on-screen setup:
-Set username and password
-Connect to Wi-Fi
-Enable SSH (if required)
+-  Power on the Raspberry Pi
+-  Complete the on-screen setup:
+-  Set username and password
+-  Connect to Wi-Fi
+-  Enable SSH (if required)
 
 After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface).
 
