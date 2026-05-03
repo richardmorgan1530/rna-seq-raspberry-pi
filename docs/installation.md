@@ -350,6 +350,41 @@ Upgrade pip + install JupyterLab:
 ```
 (You will never need to manually “activate” this venv in daily use, it will automatically activate.)
 
+Create JupyterLab systemd service:
+```
+sudo nano /etc/systemd/system/jupyter.service
+```
+
+Paste this:
+```
+[Unit]
+Description=Jupyter Lab
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/var/www/html/usb/jupyter
+ExecStart=/home/pi/jlab-venv/bin/jupyter lab --no-browser --ip=127.0.0.1 --port=8888 --ServerApp.port_retries=0 --ServerApp.base_url=/usb/jupyter --ServerApp.root_dir=/var/www/html/usb/jupyter
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+Save:
+```
+Ctrl + X
+Y
+Enter
+```
+Then run:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable jupyter
+sudo systemctl start jupyter
+sudo systemctl status jupyter
+```
 ------------------------------------------------------------------------
 
 # Configure Apache reverse proxy for /usb/jupyter/
