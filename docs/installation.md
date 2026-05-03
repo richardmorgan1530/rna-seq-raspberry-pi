@@ -398,6 +398,22 @@ sudo systemctl enable jupyter
 sudo systemctl start jupyter
 sudo systemctl status jupyter
 ```
+
+⚠️ Important Security Note
+
+This configuration disables authentication and CSRF protection:
+```
+--ServerApp.token=''
+--ServerApp.password=''
+--ServerApp.disable_check_xsrf=True
+```
+This is safe only for local network use.
+
+For internet-facing deployments (e.g. Cloudflare), you should:
+
+- enable authentication OR
+- protect access using Cloudflare Access / Zero Trust
+
 ------------------------------------------------------------------------
 
 # Configure Apache reverse proxy for /usb/jupyter/
