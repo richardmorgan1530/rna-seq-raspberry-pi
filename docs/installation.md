@@ -365,7 +365,20 @@ After=network.target
 Type=simple
 User=pi
 WorkingDirectory=/var/www/html/usb/jupyter
-ExecStart=/home/pi/jlab-venv/bin/jupyter lab --no-browser --ip=127.0.0.1 --port=8888 --ServerApp.port_retries=0 --ServerApp.base_url=/usb/jupyter --ServerApp.root_dir=/var/www/html/usb/jupyter
+
+ExecStart=/home/pi/jlab-venv/bin/jupyter lab \
+  --no-browser \
+  --ip=127.0.0.1 \
+  --port=8888 \
+  --ServerApp.port_retries=0 \
+  --ServerApp.base_url=/usb/jupyter \
+  --ServerApp.root_dir=/var/www/html/usb/jupyter \
+  --ServerApp.allow_remote_access=True \
+  --ServerApp.trust_xheaders=True \
+  --ServerApp.token='' \
+  --ServerApp.password='' \
+  --ServerApp.disable_check_xsrf=True
+
 Restart=always
 RestartSec=10
 
