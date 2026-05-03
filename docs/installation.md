@@ -82,6 +82,14 @@ Enter your password if prompted
 
 Select: "1 System Options  Configure system settings"
 
+Select: "S1 Wireless LAN  Enter SSID and passphrase"
+
+Select: "3 Interface Options  Configure connections to peripherals"
+
+Select: "I1 SSH  Enable/disable remote command line access using SSH"
+
+When prompted select <Yes>
+
 
 -  Connect to Wi-Fi
 -  Enable SSH
