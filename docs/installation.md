@@ -467,7 +467,7 @@ You will be directed to the webpage shown below:
 
 Remove the requirement to use a password to login to Jupyter
 
-For local-network only / not recommended for internet-facing use. If later accessing via a public domain
+For local-network only / not recommended for internet-facing (public access) use. If later accessing via a public domain
 e.g. Cloudflare/domain, then keep authentication enabled or protect it with Cloudflare Access.
 
 Later in these instructions, Jupyter Lab will be configured for access over a public network using Cloudflare 
