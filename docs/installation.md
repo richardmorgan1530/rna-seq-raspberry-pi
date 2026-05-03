@@ -255,7 +255,7 @@ Check to ensure its correctly formatted to ext4:
 ```
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
-Take note of the UUID of your USB SSD as its needed later.
+Take note of the UUID of your USB SSD as its needed later. e.g. 626d0262-7b39-4f72-b1fa-8ff172a5639b
 
 Once correctly formatted to ext4, auto mount the USB SSD to the website folder located at /var/www/html/usb
 
