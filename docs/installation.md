@@ -34,6 +34,8 @@ Download the latest version of **Raspberry Pi Imager** from:
 
 https://www.raspberrypi.com/software/
 
+Use v2.0.7 or higher only.
+
 Insert your microSD card and select:
 
 **Raspberry Pi OS (Other) → Raspberry Pi OS Lite (64-bit)**
