@@ -251,7 +251,7 @@ sudo parted -s /dev/sda mklabel gpt
 sudo parted -s /dev/sda mkpart primary ext4 0% 100%
 sudo mkfs.ext4 -F -L NCBI /dev/sda1
 ```
-Then heck to ensure its correctly formatted to ext4:
+Then check to ensure its correctly formatted to ext4:
 ```
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
