@@ -242,7 +242,7 @@ lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
   <img src="../images/mount-USB-SSD-ID.png" width="800">
 </p>
 
-In the example shown in the screenshot above you can see the UUID next to sda1
+In the example shown in the screenshot above you can see the UUID next to sda1 "626d0262-7b39-4f72-b1fa-8ff172a5639b"
 
 If your SSD is formatted as anything other than ext4 then partition and format as follows:
 
@@ -255,7 +255,7 @@ Check to ensure its correctly formatted to ext4:
 ```
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT,MODEL
 ```
-Take note of the UUID of your USB SSD as its needed later. e.g. 626d0262-7b39-4f72-b1fa-8ff172a5639b
+Take note of the UUID of your USB SSD as its needed later.
 
 Once correctly formatted to ext4, auto mount the USB SSD to the website folder located at /var/www/html/usb
 
