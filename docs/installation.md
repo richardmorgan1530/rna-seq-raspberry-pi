@@ -452,3 +452,8 @@ Reload Apache:
 sudo systemctl reload apache2
 ```
 ------------------------------------------------------------------------
+Test in a browser:
+```
+http://raspberrypi.local/usb/jupyter
+```
+
