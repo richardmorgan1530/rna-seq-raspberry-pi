@@ -70,10 +70,10 @@ A keyboard and monitor must be connected to the Raspberry Pi 5 during initial bo
 On First Boot:
 -  Power on the Raspberry Pi
 
--  Complete the on-screen setup:
-  -  Set username and password
-  -  Connect to Wi-Fi
-  -  Enable SSH (if required)
+Complete the on-screen setup:
+-  Set username and password
+-  Connect to Wi-Fi
+-  Enable SSH (if required)
 
 After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface).
 
