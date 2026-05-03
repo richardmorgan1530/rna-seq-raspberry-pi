@@ -196,6 +196,10 @@ Scroll down to the bottom of the tree, to the folder named 'var' and double clic
 
 Then 'www', then 'html' and you should see the index.html file i.e. 'Apache2 Debian Default Page'
 
+<p align="left">
+  <img src="../images/FileZilla-login(3).png" width="800">
+</p>
+
 ------------------------------------------------------------------------
 
 # Create a web-accessible directory to mount the USB SSD
