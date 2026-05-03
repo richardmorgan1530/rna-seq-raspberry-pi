@@ -51,11 +51,11 @@ Before flashing the OS, apply OS customisation settings in Raspberry Pi Imager.
 
 -   Set hostname e.g.: `raspberrypi`
 -   Set username and password
--   Configure WiFi if required
--   Enable SSH (**Use password authentication** for first setup)
+-   Configure WiFi
+-   Enable SSH (**Use password authentication**)
 -   Do not enable Raspberry Pi Connect unless specifically required
 
-Write the SD card and, when complete, insert it into the Raspberry Pi.
+Write the SD card and when complete, insert it into the Raspberry Pi.
 
 Power ON the Raspberry Pi.
 
