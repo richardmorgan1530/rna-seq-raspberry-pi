@@ -55,48 +55,11 @@ Before flashing the OS, apply OS customisation settings in Raspberry Pi Imager.
 
 Write the SD card and, when complete, insert it into the Raspberry Pi.
 
-------------------------------------------------------------------------
-
-⚠️ Initial Setup Requirement
-
-Although Raspberry Pi Imager allows preconfiguration of username, password and Wi-Fi settings, these settings may not reliably apply after flashing.
-
-For consistency and reproducibility, this project uses a manual first-boot setup.
-
-Requirement:
-
-A keyboard and monitor must be connected to the Raspberry Pi 5 during initial boot.
-
-On First Boot:
--  Power on the Raspberry Pi
-
-Complete the on-screen setup:
--  Set username and password
--  login for the first time
-
-Open raspi-config using command:
-```
-sudo raspi-config
-```
-Enter your password if prompted
-
-Select: "1 System Options  Configure system settings"
-
-Select: "S1 Wireless LAN  Enter SSID and passphrase"
-
-Select: "3 Interface Options  Configure connections to peripherals"
-
-Select: "I1 SSH  Enable/disable remote command line access using SSH"
-
-When prompted select 'Yes' , 'OK' and 'Finish'
-
-After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface)
-therefore the monitor and keyboard can be disconnected.
+Power ON the Raspberry Pi.
 
 ------------------------------------------------------------------------
 
-After initial setup you can remove the monitor, keyboard and mouse and instead
-connect via SSH using terminal apps such as PuTTY, Windows Terminal etc...
+Connect via SSH using terminal apps such as PuTTY, Windows Terminal etc...
 
 PuTTY: https://putty.org/index.html
 
