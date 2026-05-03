@@ -482,6 +482,8 @@ sudo systemctl reload apache2
 ```
 ------------------------------------------------------------------------
 
+i might not need the below instructions, need to to full install test...
+
 Test in a browser:
 ```
 http://raspberrypi.local/usb/jupyter
