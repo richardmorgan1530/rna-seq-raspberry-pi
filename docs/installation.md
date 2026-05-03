@@ -218,6 +218,10 @@ sudo chmod -R 775 /var/www/html
 ```
 Click the refresh button in FileZilla to view this new usb folder
 
+<p align="left">
+  <img src="../images/FileZilla-login(4).png" width="800">
+</p>
+
 ------------------------------------------------------------------------
 
 # Mount USB SSD for Jupyter Lab and NCBI File Downloads:
