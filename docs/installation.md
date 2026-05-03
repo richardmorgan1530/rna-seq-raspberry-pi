@@ -73,7 +73,7 @@ On First Boot:
 Complete the on-screen setup:
 -  Set username and password
 -  Connect to Wi-Fi
--  Enable SSH (if required)
+-  Enable SSH
 
 After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface).
 
