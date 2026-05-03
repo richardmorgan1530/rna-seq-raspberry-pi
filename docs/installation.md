@@ -163,11 +163,11 @@ Example file:
 ```
 /var/www/html/index.html
 ```
-'Apache2 Debian Default Page' is the file at /var/www/html/index.html
+The 'Apache2 Debian Default Page' in the screenshot above is the file located at /var/www/html/index.html
 
 When you open http://raspberrypi.local in a browser, you are opening the file /var/www/html/index.html
 
-This index.html page is visible to all PCs connected to the local area network via a web browser, by going to the address http://raspberrypi.local
+This index.html page is visible to all PCs connected to the local area network, at the address http://raspberrypi.local
 
 ------------------------------------------------------------------------
 
