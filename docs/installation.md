@@ -49,8 +49,9 @@ overhead and improves stability for server-based applications.
 
 Before flashing the OS, apply OS customisation settings in Raspberry Pi Imager.
 
--   Set hostname e.g.: `raspberrypi`
--   Set username and password
+-   Set hostname: `raspberrypi`
+-   Set username: `pi`
+-   Set password: `choose a password`
 -   Configure WiFi
 -   Enable SSH (**Use password authentication**)
 -   Do not enable Raspberry Pi Connect unless specifically required
