@@ -88,13 +88,10 @@ Select: "3 Interface Options  Configure connections to peripherals"
 
 Select: "I1 SSH  Enable/disable remote command line access using SSH"
 
-When prompted select <Yes>
+When prompted select 'Yes' , 'OK' and 'Finish'
 
-
--  Connect to Wi-Fi
--  Enable SSH
-
-After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface).
+After this initial configuration, the device can be used headlessly (e.g. via SSH or web interface)
+therefore the monitor and keyboard can be disconnected.
 
 ------------------------------------------------------------------------
 
