@@ -457,3 +457,6 @@ Test in a browser:
 http://raspberrypi.local/usb/jupyter
 ```
 
+<p align="left">
+  <img src="../images/jupyter-test(1).png" width="800">
+</p>
