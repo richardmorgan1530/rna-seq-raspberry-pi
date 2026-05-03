@@ -72,6 +72,17 @@ On First Boot:
 
 Complete the on-screen setup:
 -  Set username and password
+-  login for the first time
+
+Open raspi-config using command:
+```
+sudo raspi-config
+```
+Enter your password if prompted
+
+Select: "1 System Options  Configure system settings"
+
+
 -  Connect to Wi-Fi
 -  Enable SSH
 
