@@ -339,13 +339,15 @@ Expected output:
 /home/pi/edirect/esearch
 /home/pi/edirect/efetch
 ```
-> ⚠️ **Important (Jupyter Users)**
-> Jupyter Notebook sessions may not inherit your system PATH.
-> When using EDirect inside Jupyter, include:
->
-> ```
-> export PATH="$HOME/edirect:$PATH"
-> ```
+⚠️ **Important (Jupyter Users)**
+
+Jupyter Notebook sessions may not inherit your system PATH.
+
+When using EDirect inside Jupyter, include:
+
+```
+export PATH="$HOME/edirect:$PATH"
+```
 
 ------------------------------------------------------------------------
 
