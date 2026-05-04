@@ -320,6 +320,8 @@ fasterq-dump --version
 
 EDirect provides the `esearch` and `efetch` tools used to query NCBI SRA
 and retrieve run metadata (e.g. SRR accession lists).
+
+EDirect is used to retrieve SRA run metadata, while SRA Toolkit is used to download sequence data.
 ```
 cd ~
 curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh | bash
