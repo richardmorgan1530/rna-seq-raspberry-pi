@@ -316,6 +316,39 @@ fasterq-dump --version
 ```
 ------------------------------------------------------------------------
 
+# Install NCBI EDirect (Required for SRA Metadata Queries)
+
+EDirect provides the `esearch` and `efetch` tools used to query NCBI SRA
+and retrieve run metadata (e.g. SRR accession lists).
+```
+cd ~
+curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh | bash
+```
+Add EDirect to your PATH:
+```
+echo 'export PATH="$HOME/edirect:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+Verify installation:
+```
+which esearch
+which efetch
+```
+Expected output:
+```
+/home/pi/edirect/esearch
+/home/pi/edirect/efetch
+```
+> ⚠️ **Important (Jupyter Users)**
+> Jupyter Notebook sessions may not inherit your system PATH.
+> When using EDirect inside Jupyter, include:
+>
+> ```
+> export PATH="$HOME/edirect:$PATH"
+> ```
+
+------------------------------------------------------------------------
+
 # Install Kallisto (APT)
 ```
 sudo apt install kallisto -y
