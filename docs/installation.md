@@ -380,10 +380,10 @@ Create a dedicated venv (virtual environment) for JupyterLab (PEP 668 safe):
 ```
 python3 -m venv /home/pi/jlab-venv
 ```
-Upgrade pip + install JupyterLab:
+Upgrade pip + install JupyterLab + pandas:
 ```
 /home/pi/jlab-venv/bin/pip install --upgrade pip
-/home/pi/jlab-venv/bin/pip install jupyterlab ipykernel
+/home/pi/jlab-venv/bin/pip install jupyterlab ipykernel pandas
 ```
 (You will never need to manually “activate” this venv in daily use, it will automatically activate.)
 
