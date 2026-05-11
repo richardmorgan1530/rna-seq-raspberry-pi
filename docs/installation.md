@@ -297,6 +297,73 @@ sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget un
 ```
 ------------------------------------------------------------------------
 
+# Install Trimmomatic (Manual Java Installation)
+
+Trimmomatic is used for RNA-seq read trimming and quality filtering.
+
+This guide installs Trimmomatic manually using the official .jar release rather than Conda, which simplifies usage inside JupyterLab and avoids needing to activate Conda environments.
+
+Verify Java is installed:
+```
+java -version
+```
+Download Trimmomatic:
+```
+cd /opt
+
+sudo wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
+```
+Extract the archive:
+```
+sudo unzip Trimmomatic-0.39.zip
+```
+Verify installation:
+```
+ls /opt/Trimmomatic-0.39
+```
+Expected output includes:
+```
+trimmomatic-0.39.jar
+```
+Create a system-wide launcher:
+```
+sudo nano /usr/local/bin/trimmomatic
+```
+Paste:
+```
+#!/bin/bash
+java -jar /opt/Trimmomatic-0.39/trimmomatic-0.39.jar "$@"
+```
+Save:
+```
+Ctrl + X
+Y
+Enter
+```
+Make executable:
+```
+sudo chmod +x /usr/local/bin/trimmomatic
+```
+Verify installation:
+```
+which trimmomatic
+```
+Expected output:
+```
+/usr/local/bin/trimmomatic
+```
+Test:
+```
+trimmomatic -version
+```
+Trimmomatic can now be used directly inside terminal sessions and Jupyter Notebook cells:
+
+Example command:
+```
+trimmomatic SE input.fastq.gz output.fastq.gz SLIDINGWINDOW:4:20 MINLEN:75
+```
+------------------------------------------------------------------------
+
 # Install SRA Toolkit (APT)
 
 Install via package manager:
