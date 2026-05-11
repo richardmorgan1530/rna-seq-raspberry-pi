@@ -301,7 +301,7 @@ sudo apt install python3 python3-pip python3-venv git default-jre fastqc wget un
 
 Trimmomatic is used for RNA-seq read trimming and quality filtering.
 
-This guide installs Trimmomatic manually using the official .jar release rather than Conda, which simplifies usage inside JupyterLab and avoids needing to activate Conda environments.
+This guide installs Trimmomatic manually using the official .jar release.
 
 Verify Java is installed:
 ```
