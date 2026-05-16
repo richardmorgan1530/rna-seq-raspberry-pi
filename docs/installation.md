@@ -417,6 +417,41 @@ When using EDirect inside Jupyter, include:
 ```
 export PATH="$HOME/edirect:$PATH"
 ```
+------------------------------------------------------------------------
+
+# Install Samtools (APT)
+
+Samtools is used for manipulating and indexing SAM/BAM alignment files.
+
+Install Samtools:
+```bash
+sudo apt install samtools -y
+```
+
+Verify installation:
+```bash
+samtools --version
+```
+
+Example usage:
+
+Index a BAM file:
+```bash
+samtools index sample.bam
+```
+
+This creates:
+```text
+sample.bam.bai
+```
+
+The `.bam.bai` index file is required for genome browsers such as:
+
+- UCSC Genome Browser
+- IGV
+- JBrowse
+
+to efficiently visualize genomic regions from BAM files.
 
 ------------------------------------------------------------------------
 
