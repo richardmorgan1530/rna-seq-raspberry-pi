@@ -228,6 +228,8 @@ Click the refresh button in FileZilla to view this new usb folder
 
 This example uses a 1TB USB SSD (important) connected to the Raspberry Pi via externally powered USB hub.
 
+Troubleshooting note: During testing with large RNA-seq FASTQ files (>15 GB), a USB 3.0 SSD connected directly to a Raspberry Pi 5 caused severe packet loss and SSH/Jupyter disconnections when operating over 2.4 GHz Wi-Fi. Connecting the SSD through an externally powered USB 3.0 hub completely resolved the issue while maintaining full USB 3.0 performance (~384 MB/s). Users experiencing Wi-Fi instability should consider using an externally powered USB hub, Ethernet networking, or 5 GHz Wi-Fi.
+
 For Raspberry Pi requirements, its best to format the USB SSD using ext4 formatting.
 
 Raspberry Pi headless operating system is very minimal and therefore doesnt automatically mount any attached 
