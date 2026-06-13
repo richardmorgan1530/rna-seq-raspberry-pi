@@ -1,3 +1,9 @@
+# Project Status
+
+This project is currently under active development and is being shared to demonstrate my technical skills in bioinformatics, data analysis, software development, and scientific computing.
+
+------------------------------------------------------------------------
+
 # RNA-seq Analysis on Raspberry Pi
 
 ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-red)
