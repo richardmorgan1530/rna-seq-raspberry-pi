@@ -1,6 +1,6 @@
 # Project Status
 
-This project is currently under active development and is being shared to demonstrate my technical skills in bioinformatics, data analysis, software development, and scientific computing.
+This project is currently under active development and is being shared to demonstrate my technical skills in bioinformatics, data analysis, software development and scientific computing.
 
 ------------------------------------------------------------------------
 
