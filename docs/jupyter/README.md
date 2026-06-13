@@ -3,6 +3,6 @@
 Note: only 'High-FatCrtl_1 is set to display as 'Squish', all other samples are displayed as 'Dense'
 
 <p align="left">
-  <img src="../../images/genome_browser_edited.png" width="800"><br>
+  <img src="../../images/genome_browser_edited.png" width="1000"><br>
   Click 'Open'
 </p>
