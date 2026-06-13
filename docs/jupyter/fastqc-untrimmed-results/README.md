@@ -1,4 +1,4 @@
-# To view the rendered .html results in a webpage format, click the appropriate link below:
+# To view the rendered FastQC .html results in a webpage format, click the appropriate link below:
 
 SRR5017128_fastqc.html
 
