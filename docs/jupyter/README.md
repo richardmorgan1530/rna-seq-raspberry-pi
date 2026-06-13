@@ -6,6 +6,8 @@ To view the FastQC reports, go to either the fastqc-untrimmed-results or fastqc-
 
 Note: For visual benefit, only the 'High-FatCrtl_1' sample data is set to display as 'Squish', all other samples are displayed as 'Dense', see the dropdown menus in screenshot below for reference.
 
+Website: https://genome-euro.ucsc.edu/cgi-bin/hgGateway
+
 <p align="left">
   <img src="../../images/genome_browser_edited.png" width="1000"><br>
 </p>
