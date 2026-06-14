@@ -699,7 +699,7 @@ You could upload the raw BAM files to the website one by one, however they are e
 
 A better approach is to make your Raspberry Pi accessible to the public domain. However there are a few steps which you need to complete first in order to be able to do this. You need to configure your home/work/university router for port forwarding to your Raspberry Pi, purchase a domain name from a provider like Cloudflare or other and link it to your Raspberry Pi (approx $10 per year), create a new folder on your Raspberry Pi which is located outside of the jupyter folder directory, move all BAM files to the new folder. Then follow the instructions in the jupyter lab notebook file: 5_visualize_bam_file_alignment_at_the_leptin_gene_locus.ipynb
 
-Example public link to my BAM folder located on my Raspberry Pi through my public domain "regmedweb.com" is https://regmedweb.com/usb/genome_browser/bamfiles/SRR5017138_quant/pseudoalignments.bam
+Example public link to my BAM folder located on my Raspberry Pi through my public domain "regmedweb.com" is https://<your-domain-name>.com/usb/genome_browser/bamfiles/SRR5017138_quant/pseudoalignments.bam
 
 Note: most of the time my Raspberry Pi is turned off, my Raspberry Pi server through this domain name is only accessable if my Ras Pi is turned on.
 
