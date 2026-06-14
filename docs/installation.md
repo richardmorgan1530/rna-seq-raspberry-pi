@@ -701,6 +701,6 @@ A better approach is to make your Raspberry Pi accessible to the public domain. 
 
 Example public link to my BAM folder located on my Raspberry Pi through my public domain "regmedweb.com" is https://regmedweb.com/usb/genome_browser/bamfiles/SRR5017138_quant/pseudoalignments.bam
 
-Note: most of the time my Raspberry Pi is turned off so this like will only work if my Ras Pi is turned on.
+Note: most of the time my Raspberry Pi is turned off, my Raspberry Pi server through this domain name is only accessable if my Ras Pi is turned on.
 
 To see an example BAM file alignment to the mouse Leptin gene, see the screenshot located in the README.md file located in the jupyter folder. The screenshot shows BAM files taken from a Raspberry Pi folder which is accessible publically using hyperlinks placed into the uscs genome website input field. This is the most convenient method for visualising the alignment to a particular gene of interest.
