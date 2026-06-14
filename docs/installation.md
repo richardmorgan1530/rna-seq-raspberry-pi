@@ -674,6 +674,6 @@ http://raspberrypi.local/usb/jupyter/
 It should go straight into JupyterLab.
 
 <p align="left">
-  <img src="../images/Jupyter(2).png" width="800">
+  <img src="../images/Jupyter(3).png" width="800">
 </p>
 
