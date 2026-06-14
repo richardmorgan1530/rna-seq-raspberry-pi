@@ -679,3 +679,8 @@ You can then create your projects folder and import the jupyter lab notebook exa
   <img src="../images/Jupyter(3).png" width="800">
 </p>
 
+------------------------------------------------------------------------
+
+# FastQC Reports:
+
+You can use the jupyter lab notebooks located fastqc-trimmed-results
