@@ -693,4 +693,8 @@ Some example FastQC Reports generated on a Raspberry Pi are located in the jupyt
 
 The jupyter lab notebook examples located in the jupyter folder can be used to generate BAM Files.
 
-There are multiple methods to visualise BAM Files. One example is to upload the various BAM files or links to the BAM files to genome browser website
+There are multiple methods to visualise BAM Files. One example is to upload the various BAM files or links to the BAM files to ucsc genome website https://genome-euro.ucsc.edu/cgi-bin/hgGateway
+
+You could upload the raw BAM files to the website one by one, however they are extremely large, typically ~3GB each, so that method might take a while.
+
+A better approach is to make your Raspberry Pi accessable to the public domain. However there are a few steps to complete to do this, you need to configure your router for port forwarding to your Raspberry Pi, purchase a domain name from a provider like Cloudflare or other and link it to your Raspberry Pi (approx $10 per year), create a new folder on your Raspberry Pi which is located outside of the jupyter folder directory, move all BAM files to the new folder. Then follow the instructions in the jupyter lab notebook file: 5_visualize_bam_file_alignment_at_the_leptin_gene_locus.ipynb
