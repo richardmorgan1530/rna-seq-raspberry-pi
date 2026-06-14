@@ -683,4 +683,6 @@ You can then create your projects folder and import the jupyter lab notebook exa
 
 # FastQC Reports:
 
-You can use the jupyter lab notebooks located fastqc-trimmed-results
+The jupyter lab notebook examples located in the jupyter folder can be used to generate FastQC Reports.
+
+Some example FastQC Reports generated on a Raspberry Pi are located in the jupyter/fastqc-trimmed-results and jupyter/fastqc-untrimmed-results folders.
