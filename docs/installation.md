@@ -226,7 +226,7 @@ Click the refresh button in FileZilla to view this new usb folder
 
 # Mount USB SSD for Jupyter Lab and NCBI File Downloads:
 
-This example uses a 1TB USB SSD (important) connected to the Raspberry Pi via externally powered USB hub.
+This example uses a 1TB USB SSD (important) depending on your SSD power consumption you might need to connect the SSD to the Raspberry Pi via externally powered USB hub.
 
 Troubleshooting note: During testing with large RNA-seq FASTQ files (>10 GB), the USB 3.0 SSD connected directly to a Raspberry Pi 5 (i.e. not via the externally powered USB hub) caused severe packet loss and SSH/Jupyter disconnections when operating over 2.4 GHz Wi-Fi likely due to USB 3.0 RF noise interfering with the Raspberry Pi 2.4 GHz receiver. Connecting the SSD through an externally powered USB 3.0 hub completely resolved the issue while maintaining full USB 3.0 performance (~384 MB/s). Users experiencing Wi-Fi instability should consider using an externally powered USB hub or Ethernet networking or 5 GHz Wi-Fi instead of 2.4 GHz Wi-Fi or use the USB 2.0 hub instead of the USB 3.0 hub on the Raspberry Pi 5.
 
