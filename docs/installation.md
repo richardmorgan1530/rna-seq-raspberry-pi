@@ -686,3 +686,11 @@ You can then create your projects folder and import the jupyter lab notebook exa
 The jupyter lab notebook examples located in the jupyter folder can be used to generate FastQC Reports.
 
 Some example FastQC Reports generated on a Raspberry Pi are located in the jupyter/fastqc-trimmed-results and jupyter/fastqc-untrimmed-results folders.
+
+------------------------------------------------------------------------
+
+# BAM Files:
+
+The jupyter lab notebook examples located in the jupyter folder can be used to generate BAM Files.
+
+There are multiple methods to visualise BAM Files. One example is to upload the various BAM files or links to the BAM files to genome browser website
