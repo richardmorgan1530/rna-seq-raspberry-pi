@@ -673,6 +673,8 @@ http://raspberrypi.local/usb/jupyter/
 ```
 It should go straight into JupyterLab.
 
+You can then create your projects folder and import the jupyter lab notebook examples from the github jupyter folder for testing.
+
 <p align="left">
   <img src="../images/Jupyter(3).png" width="800">
 </p>
